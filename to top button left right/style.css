@@ -1,0 +1,61 @@
+.container {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    ". h . . . r ."
+    "j s s s s s t"
+    ". s s s s s ."
+    ". s s s s s ."
+    ". s s s s s ."
+    "f s s s s s m"
+    ". b . . . v .";
+}
+
+.container .tl {
+  grid-area: h;
+  background-color: antiquewhite;
+}
+.container .rt {
+  grid-area: r;
+  background-color: rgb(250, 215, 234);
+}
+.container .lt {
+  grid-area: j;
+  background-color: blue;
+}
+.container .tr {
+  grid-area: t;
+  background-color: rgb(229, 255, 0);
+}
+
+.container .yellow {
+  background-color: yellow;
+  grid-area: s;
+  position: relative;
+}
+.container .yellow .red {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+}
+
+.container .lb {
+  grid-area: f;
+  background-color: yellowgreen;
+}
+
+.container .bl {
+  background-color: rgb(50, 205, 146);
+
+  grid-area: b;
+}
+.container .br {
+  grid-area: v;
+  background-color: violet;
+}
+.container .rb {
+  grid-area: m;
+}
